@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Service Page</title>
+        <link rel="stylesheet" href="stylesheet/styles.css">
+        <script src="javascript/script.js" defer></script>
+    </head>
+    <body>
+        <div>
+            <div class="row">
+                <div class="col-sm-8">Service Page</div>  
+                <img src="Images/caffeinated_climber_pic.png" alt="Logo-Image" width="250" height="250">
+            </div>
+            <div class="row">
+                <div class="col-sm"><b>These are all the different Services that we offer: </b></div>
+            </div>
+            <table id="servicesTable" border="1">
+                <thead>
+                    <tr>
+                        <th>Service ID</th>
+                        <th>Service</th>
+                        <th>Description</th>
+                        <th>Duration</th>
+                        <th>Cost in $</th>
+                        <th>Departs</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <br><br><br>
+            <div>Would you like to purchase on of the services?</div>
+            <form name="firstform" id="form1" method="get" action="javascript:printMe(this.saying.value);">
+                <input type="text" size="100" name="saying" id="saying" value="Which Service Would You Like to go With?">
+                <input type="submit" value="Click to Submit Your Claim">
+            </form>
+            <br><br>
+        </div>
+    </body>
+</html>

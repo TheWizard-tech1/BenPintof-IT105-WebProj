@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Customer Page</title>
+        <link rel="stylesheet" href="stylesheet/styles.css">        
+        <script src="javascript/script.js" defer></script>
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-sm-8">Customer Page</div>
+            <img src="Images/caffeinated_climber_pic.png" alt="Logo-Image" width="250" height="250">
+        </div>
+        <br><br><br>
+         <div class="container mt-5" >
+            <div id="card1" class="card active" style="width: 18rem;">
+                <img src="Images/IT105-Excursions-Photos/IT105-Excursions-Photos/gunks.png" class="card-img-top" alt="Adventure 1 Photo" width="500" height="300">
+                <div class="card-body">
+                    <h5 class="card-title">Backpacking: Backpacking Trek</h5>
+                    <p class="card-text">Date of Adventure: July 18, 2019</p>
+                    <hr>
+                    <h6>Customer: Moe Miden</h6>
+                    <blockquote class="blockquote">
+                        <p>"What an awesome experience!! Views were out of this world"</p>
+                    </blockquote>
+                    <p>14 day backpacking trip from Michaux State Forest, PA to Cascade, MD.</p>
+                </div>
+            </div>
+             <div id="card2" class="card" style="width: 18rem;">
+                <img src="Images/IT105-Excursions-Photos/IT105-Excursions-Photos/newriver.png" class="card-img-top" alt="Adventure 2 Photo" width="500" height="300">
+                <div class="card-body">
+                    <h5 class="card-title">Backpacking: Weekend Backpacking Trip</h5>
+                    <p class="card-text">Date of Adventure: May 4, 2021</p>
+                    <hr>
+                    <h6>Customer: Lonald Lump</h6>
+                    <blockquote class="blockquote">
+                        <p>"Great experience. Would definately reccomend to others"</p>
+                    </blockquote>
+                    <p>Backpacking trip from Mapleton Depot to the Martins Gao via the Standing Stone Trail.</p>
+                </div>
+            </div><div id="card3" class="card" style="width: 18rem;">
+                <img src="Images/IT105-Excursions-Photos/IT105-Excursions-Photos/rrg.png" class="card-img-top" alt="Adventure 3 Photo" width="500" height="300">
+                <div class="card-body">
+                    <h5 class="card-title">Climbing: Bouldering</h5>
+                    <p class="card-text">Date of Adventure: August 13, 2018</p>
+                    <hr>
+                    <h6>Customer: Malala Marris</h6>
+                    <blockquote class="blockquote">
+                        <p>"Tour guides were very helpful. We had a great time"</p>
+                    </blockquote>
+                    <p> Climb the boulders at Pulpit Rocks, Huntigndon 1 PM - 6 PM.</p>
+                </div>
+            </div><div id="card4" class="card" style="width: 18rem;">
+                <img src="Images/IT105-Excursions-Photos/IT105-Excursions-Photos/seneca.png" class="card-img-top" alt="Adventure 4 Photo" width="500" height="300">
+                <div class="card-body">
+                    <h5 class="card-title">Land Navingation: Compass - Map</h5>
+                    <p class="card-text">Date of Adventure: September, 2018</p>
+                    <hr>
+                    <h6>Customer: Coerge Cashington</h6>
+                    <blockquote class="blockquote">
+                        <p>"Great experience. Makes you think about the world around you"</p>
+                    </blockquote>
+                    <p>Navigate your way through the wilderness from 9 AM - 5 PM.</p>
+                </div>
+            </div>
+             
+        </div>
+        <div class="d-flex justify-content-between mt-3">
+                <button class="btn btn-primary" onclick="previousCard()">Previous</button>
+                <button class="btn btn-primary" onclick="nextCard()">Next</button>
+        </div>
+        <br><br>
+        <div>Want to learn more information or have some feeback for us? </div><br>
+            <form name="CustForm" id="form1" method="get" action="javascript:FeeBack(this.saying.value);">
+                <input type="text" size="100" name="saying" id="saying" value="Please enter any Questions or Feeback">
+                <input type="submit" value="Submit">
+            </form>
+    </body>
+</html>
+
+
+
+
+
+
+
