@@ -34,7 +34,6 @@ function printMe(mystr) {
 /* Customer Page */
 
 let currentCardIndex = 0;
-const cards = document.querySelectorAll('.card');
 
 function showCard(index) {
     cards.forEach((card, i) => {
@@ -59,4 +58,43 @@ function FeeBack(mystr) {
                 fee = mystr;
                 alert('Thank you very much for your input. As a Small company, we highly appreciate the customers thoughts and questions. .');
             }
+
+
+fetch('CustPageInfo.json')
+    .then(response => response.json())
+    .then(data => {
+        const cardContainer = document.getElementById('card-container');
+        data.forEach((adventure, index) => {
+            const card = document.createElement('div');
+            card.className = `card ${index === 0 ? 'active' : ''}`;
+            card.innerHTML = `
+                <img src="${adventure.adventurephoto}" class="card-img-top" alt="${adventure.adventureName} width="500" height="300"">
+                <div class="card-body">
+                    <h5 class="card-title">Adventure: ${adventure.adventurename}</h5>
+                    <blockquote class="blockquote">
+                        <p>"${adventure.excurstionstmt}"</p>
+                    </blockquote>
+                    <p class="card-text"><strong>Date of Adventure:</strong> ${adventure.adventuredate}</p>
+                    <hr>
+                    <h6>Customer: ${adventure.customername}</h6>
+                    <blockquote class="blockquote">
+                        <p>"${adventure.customerquote}"</p>
+                    </blockquote>
+                    <p>${adventure.descriptionfile}</p>
+                </div>
+            `;
+            cardContainer.appendChild(card);
+            });
+        cards = document.querySelectorAll('.card');
+        })
+        .catch(error => console.error('Error fetching adventures:', error));
+
+
+
+
+
+
+
+
+
     
