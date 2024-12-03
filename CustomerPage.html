@@ -8,14 +8,21 @@
         <script src="javascript/script.js" defer></script>
     </head>
     <body>
-        <div class="row">
-            <div class="col-sm-8">Customer Page</div>
-            <a href="https://thewizard-tech1.github.io/BenPintof-IT105-WebProj/">
-                    <img src="Images/caffeinated_climber_pic.png" alt="Clickable Image 3" style="cursor: pointer; width: 200px; height: auto;">
-            </a>
-        </div>
-        <br><br><br>
-         <div class="containermt-5" >
+        <header>
+            <h1>Welcome to<br>Caffienated Climber</h1>
+
+        </header>
+        <nav>
+            <a href="#home" onclick="location.href='https://thewizard-tech1.github.io/BenPintof-IT105-WebProj/'">Home</a>
+            <a href="#aboutus" onclick="location.href='https://thewizard-tech1.github.io/BenPintof-IT105-WebProj/CompanyPage'"> About Us</a>
+            <a href="#store" onclick="location.href='https://thewizard-tech1.github.io/BenPintof-IT105-WebProj/StorePage'">Company Store</a>
+            <a href="#services" onclick="location.href='https://thewizard-tech1.github.io/BenPintof-IT105-WebProj/ServicePage'">Services</a>
+            <a href="#customer" onclick="location.href='https://thewizard-tech1.github.io/BenPintof-IT105-WebProj/CustomerPage'">Customer Page</a>
+        </nav>
+        <div class="container" >
+            <div>
+                <img src="Images/caffeinated_climber_pic.png" style=" width: 200px; height: auto;">
+            </div>
             <div id="card-container"></div>
         </div>
         <div class="d-flex justify-content-between mt-3">
@@ -25,9 +32,14 @@
         <br><br>
         <div>Want to learn more information or have some feeback for us? </div><br>
             <form name="CustForm" id="form1" method="get" action="javascript:FeeBack(this.saying.value);">
+                <input type="text" size="100" name="name" id="name" value="What is your full name?">
+                <input type="text" size="100" name="email" id="email" value="What is your Email?">
                 <input type="text" size="100" name="saying" id="saying" value="Please enter any Questions or Feeback">
                 <input type="submit" value="Submit">
             </form>
+        <footer>
+            <p>&copy; 2024 Caffienated Climber</p>
+        </footer>
     </body>
 </html>
 

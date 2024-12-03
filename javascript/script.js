@@ -56,7 +56,7 @@ function previousCard() {
 
 function FeeBack(mystr) {
                 fee = mystr;
-                alert('Thank you very much for your input. As a Small company, we highly appreciate the customers thoughts and questions. .');
+                alert('Thank you very much for your input. As a Small company, we highly appreciate the customers thoughts and questions.' + fee);
             }
 
 
