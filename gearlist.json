@@ -1,0 +1,42 @@
+[
+    {
+        "gear_manu": "Petzl",
+        "gear_name": "Omni Locking Carabiner, Screw-Lock",
+        "gear_cost": "23.95"
+    },
+    {
+        "gear_manu": "Petzl",
+        "gear_name": "AmD Screw Lock Carabiner",
+        "gear_cost": "18.95"
+    },
+    {
+        "gear_manu": "Petzl",
+        "gear_name": "Attache",
+        "gear_cost": "19.00"
+    },
+    {
+        "gear_manu": "Petzl",
+        "gear_name": "SmD Twist-Lock Autolock Carabiner",
+        "gear_cost": "22.95"
+    },
+    {
+        "gear_manu": "Black Diamond",
+        "gear_name": "RockLock TwistLock - Gray",
+        "gear_cost": "22.95"
+    },
+    {
+        "gear_manu": "Black Diamond",
+        "gear_name": "Hotforge Screwgate 3 Pack",
+        "gear_cost": "34.95"
+    },
+    {
+        "gear_manu": "Black Diamond",
+        "gear_name": "Hotforge Screwgate",
+        "gear_cost": "12.95"
+    },
+    {
+        "gear_manu": "Black Diamond",
+        "gear_name": "Camalot C4 2nds - Size .75",
+        "gear_cost": "$63.96"
+    }
+]

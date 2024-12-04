@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <title>Company Store Page</title>
         <link rel="stylesheet" href="stylesheet/styles.css">
+        <script src="javascript/script.js" defer></script>
     </head>
     <body>
         <header>
@@ -20,6 +21,19 @@
             <div class="CCPic">
                 <img src="Images/caffeinated_climber_pic.png" style=" width: 200px; height: auto;">
             </div>
+            <div>
+                <p>Items For Purchase</p>
+            </div>
+                <div id="card-container"></div>
+        </div>
+        <div>
+            <form name="StoreForm" id="form2" method="get" onsubmit="Purchase();">
+                <input type="text" size="100" name="name" id="name1" value="Full Name?">
+                <input type="text" size="100" name="email" id="email1" value="What is your Email?">
+                <input type="text" size="100" name="item" id="item1" value="What Item would You like?">
+                <input type="text" size="100" name="address" id="address1" value="What is your address?">
+                <input type="submit" value="Submit">
+            </form>
         </div>
         <footer>
             <p>&copy; 2024 Caffienated Climber</p>

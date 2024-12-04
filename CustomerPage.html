@@ -23,7 +23,7 @@
             <div>
                 <p>Look at the experiences some of our customers shared</p>
             </div>
-            <div id="card-container"></div>
+            <div id="card-container1"></div>
         </div>
         <div class="d-flex justify-content-between mt-3">
             <button class="btn btn-primary" onclick="previousCard()">Previous</button>
@@ -31,7 +31,7 @@
         </div>
         <br><br>
         <div>Want to learn more information or have some feeback for us? </div><br>
-            <form name="CustForm" id="form1" method="get" action="javascript:FeeBack(this.saying.value);">
+            <form name="CustForm" id="form1" method="get" onsubmit="FeeBack();">
                 <input type="text" size="100" name="name" id="name" value="What is your full name?">
                 <input type="text" size="100" name="email" id="email" value="What is your Email?">
                 <input type="text" size="100" name="saying" id="saying" value="Please enter any Questions or Feeback">
